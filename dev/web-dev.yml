@@ -1,0 +1,16 @@
+my-config: ceshi auto refresh dev
+#spring.jpa.hibernate.ddl-auto: create
+spring.jpa.hibernate.ddl-auto: none
+spring.jackson.date-format: yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone: GMT+8
+spring.servlet.multipart.max-file-size: 10MB
+spring.servlet.multipart.max-request-size: 10MB
+#spring.jpa.hibernate.ddl-auto: update
+spring.jpa.show-sql: true
+spring.jpa.properties.hibernate.dialect: com.bf.app.one.backend.api.code.config.MySQL5DialectUtf8mb4
+#spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+logging.config: http://127.0.0.1:21888/one-backend-api-web/dev/develop/log4j2-spring.xml
+server.port: 8086
+#druid datasouce database settings begin
+spring.datasource.druid.db-type: com.alibaba.druid.pool.DruidDataSource
+spring.datasource.druid.driverClassName: com.mysql.jdbc.Driver
