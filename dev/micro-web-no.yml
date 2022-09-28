@@ -1,0 +1,22 @@
+#spring.profiles.active=cluster
+# 静态文件请求匹配方式
+#spring.mvc.static-path-pattern=/**
+# 修改默认的静态寻址资源目录 多个使用逗号分隔
+#spring.resources.static-locations = classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/html/,classpath:/js/
+ 
+#是否讲ip注册到倒eureka
+eureka.instance.prefer-ip-address=true
+#服务续约，心跳的时间间隔
+eureka.instance.lease-renewal-interval-in-seconds=30
+#如果从前一次发送心跳时间起，90秒没接受到新的心跳，讲剔除服务
+eureka.instance.lease-expiration-duration-in-seconds=90
+#表示eureka client间隔多久去拉取服务注册信息，默认为30秒
+eureka.client.registry-fetch-interval-seconds=30
+#是否注册到eureka
+eureka.client.registerWithEureka=true
+#是否从eureka中拉取注册信息
+eureka.client.fetchRegistry=true
+#健康检测
+eureka.client.healthcheck.enabled=true
+eureka.client.serviceUrl.defaultZone=http://admin:admin@localhost:9763/eureka/
+
